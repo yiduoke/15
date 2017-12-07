@@ -10,7 +10,7 @@ var fibonacci = function(n){
     }
 };
 
-var gdc = function (a, b){
+var gcd = function (a, b){
     var greatestA;
     var greatestB;
     var greatestAB;
