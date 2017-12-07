@@ -1,4 +1,4 @@
-var fib = function(n){
+var fibonacci = function(n){
     if (n===1){
         return 1;
     }
@@ -6,11 +6,11 @@ var fib = function(n){
         return 1;
     }
     else{
-        return fib(n-1) + fib(n-2);
+        return fibonacci(n-1) + fibonacci(n-2);
     }
 };
 
-var greatestDiv = function (a, b){
+var gdc = function (a, b){
     var greatestA;
     var greatestB;
     var greatestAB;
@@ -28,4 +28,9 @@ var greatestDiv = function (a, b){
         }
     }
     return greatestAB;
+};
+
+var randomStudent = function (){
+    var list = ["margaret", "pasha", "daniel", "yuja", "jane", "md", "michelle", "penn", "elaine", "darren"];
+    return list[Math.round(Math.random()*list.length)];
 };
